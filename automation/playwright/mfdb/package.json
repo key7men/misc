@@ -1,0 +1,24 @@
+{
+  "name": "mfdb",
+  "version": "1.0.0",
+  "description": "mfdb automation workflow for saving my life.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "umeng": "npx playwright open -b webkit https://passport.umeng.com/login",
+    "memfiredb": "npx playwright open -b webkit https://cloud.memfiredb.com",
+    "genauth": "npx playwright codegen https://cloud.memfiredb.com --save-storage=memfiredb.auth.json",
+    "help": "playwright --help"
+  },
+  "keywords": [
+    "playwright",
+    "workflow",
+    "automation"
+  ],
+  "author": "key7men",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "playwright": "^1.12.3"
+  }
+}
